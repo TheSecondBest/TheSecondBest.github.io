@@ -1,3 +1,4 @@
-# TheSecondBest.github.io
+# Temporary Website!
 <br>
-I'm figuring it out. Hosting a website, I mean. And coding. And existing. Life's... a lot.
+Woo!  
+You're prolly looking for this: [hhhf](/hhhf.html)
