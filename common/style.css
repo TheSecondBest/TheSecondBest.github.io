@@ -1,0 +1,439 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #79257e;
+  padding: 0;
+  margin: 0;
+}
+
+header2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #79257e;
+  padding: 0;
+  margin: 0 16%;
+}
+
+body, html {
+  background-color: #4791D1;
+  background-image: url(background.png);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+
+  color: #000;
+  font-family: IBM Plex, sans;
+  font-size: 16px;
+  padding-bottom: .5in;
+  margin: 0;
+}
+
+footer {
+  background-color: rgba(169, 199, 236, 0.6);
+  opacity: 0.6;
+  width: 100%;
+  position: fixed;
+  align-items: left;
+  bottom: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .nav {display: none;}
+  .row {flex-direction: column;}
+}
+
+@media screen and (min-width: 901px) {
+  .navm {display: none;}
+}
+
+
+
+
+		/* Text */
+
+@font-face {
+  font-family: Nimar;
+  src: url(Nimar.ttf);
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 36px;
+}  
+
+h2 {
+  font-size: 24px;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 0;
+}  
+
+h3 {
+  padding-left: 0;
+  margin-left: 9vw;
+}
+
+h4 {
+  text-decoration: underline;
+  padding-left: 0;
+  margin-left: 7vw;
+  margin-bottom: 0;
+}  
+
+h5 {
+  padding: 0 0 6px;
+  margin-left: 7vw;
+  margin-bottom: 0;
+}  
+
+
+p {
+  margin: 0 16vw;
+  padding: 0 0 6px;
+}
+
+p.l {
+  margin: 0 0;
+}
+
+p.n {
+  font-family: nimar;
+}
+
+pq {
+  font-style: italic;
+  margin: 0 16vw;
+  padding: 0 0 6px;
+}
+
+
+		/* Image */
+
+img {
+  width: auto;
+  max-width: 60vw;
+  height: auto;
+  max-height: 80vh;
+  object-fit: cover;
+}
+
+hr {
+  margin: 5px;
+  border-top: 3px solid #79257e;
+}
+
+.hoverpic {
+  position: relative;
+}
+
+.hoverpic:hover a.fade {
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.hoverpic:hover .overlay {
+  opacity: 1;
+}
+
+
+
+
+		/* Alignment */
+
+.center {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  background: #ebf9f9;
+
+  box-shadow: 0px 12px 18px 0px rgba(0, 0, 0, 0.2);
+  padding-bottom: 2in;
+  margin: 0 16%;
+}
+
+.row2 {
+  display: flex;
+  flex-wrap: wrap;
+  background: #f6eee3;
+
+  box-shadow: 0px 12px 18px 0px rgba(0, 0, 0, 0.2);
+  padding-bottom: 2in;
+  margin: 0 16%;
+}
+
+
+.column {
+  padding: 0 2vw;
+}
+
+.column.three {
+  flex: 20%;
+}
+
+.column.two {
+  flex: 34%;
+}
+
+.column.one {
+  flex: 66%;
+}
+
+.column img {
+  max-width: 100%;
+  max-height: 60vh;
+}
+
+.column p {
+  margin: 0 3vw;
+}
+
+
+
+
+		/* Button */
+
+button {
+  display: inline-block;
+  background-color: DimGrey;
+  color: GhostWhite;
+  text-align: center;
+  font-size: 20px;
+  padding: 12px 28px;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: Gray;
+  color: GhostWhite;
+  cursor: pointer;
+}
+
+button.w {
+  background-color: GhostWhite;
+  color: DimGrey;
+}
+
+button.w:hover {
+  background-color: Gainsboro;
+  color: DimGrey;  
+  cursor: pointer;
+}
+
+.infobtn {
+  background-color: DimGrey;
+  color: GhostWhite;
+  text-align: center;
+  font-size: 20px;
+  padding: 12px 28px;
+  text-decoration: none;
+}
+
+.infobtn:hover, .infobtn:focus {
+  background-color: Grey;
+  color: GhostWhite;
+}
+
+.infodown {
+  position: relative;
+  display: inline-block;
+}
+
+.infodown-content {
+  background-color: GhostWhite;
+  color: DimGrey;
+  padding: 12px 28px;
+  min-width: 160px;
+  text-decoration:none;
+  box-shadow: 0px 12px 24px 0px rgba(0,0,0,0.2), 0px 6px 16px 0px rgba(0,0,0,0.3);
+  display: none;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  box-sizing: content-box;  
+  border: solid;
+  max-width: 70vw;
+}
+
+.infodown-content a {
+  display: block;
+  padding: 12px 28px;
+}
+
+.show {display: block;}
+
+
+
+
+
+		/* Lists */
+li {
+  display: block;
+}
+
+li.right {
+  float: right;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+li a, .dropbtn {
+  display: inline-block;
+  background-color: #79257e;
+  color: #D9BBD0;
+  text-align: center;
+  font-size: 20px;
+  padding: 12px 28px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #9a2fa2;
+  color: #D9BBD0;
+}
+
+ol {
+  counter-reset: item;
+  padding-left: 0;
+}
+
+ol li::before {
+  display: inline-block;
+  content: counter(item) ". ";
+  counter-increment: item;
+  width: 2em;
+  margin-left: -2em;
+}
+
+ul.bullet {
+  list-style-type: none;
+  overflow: hidden;
+  padding-top: 6px;
+  margin-top: 0;
+}
+
+ul.bullet li {
+  display: block;
+  margin: 0 2vw;
+  padding-top: 6px;
+}
+
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #79257e;
+}
+
+ul.navm {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #79257e;
+  position:relative;
+  float:right;
+}
+
+ul li {
+  display: inline-block;
+}
+
+
+
+
+
+		/* Nav Classes */
+
+.active {
+  background-color: Gray;
+  color: GhostWhite;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: GhostWhite;
+  color: DimGrey;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.navm li.dropdown div.dropdown-content {
+  left: auto;
+  right: 0;
+}
+
+.dropdown-content a {
+  background-color: GhostWhite;
+  color: DimGrey;
+  padding: 12px 28px;
+  text-decoration:none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+  background-color: Gainsboro;
+  color: DimGrey;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.logo {
+  width: 42px;
+  float: left;
+  margin: 4px 8px;
+}
+
+
+
+		/* Containers */
+
+div.box {
+  box-sizing: content-box;  
+  position: relative;
+  padding: 5px;
+  border: solid;
+  display: inline-block;
+  box-shadow: 0px 12px 18px 0px rgba(0, 0, 0, 0.2);
+}
+
+#container{
+  width:500px;
+  height:500px;
+  overflow:hidden;
+}
+
+#slide{
+  width:100%;
+  height:100%;
+  transition: transform .3s;
+}
+
+
+
+
+
